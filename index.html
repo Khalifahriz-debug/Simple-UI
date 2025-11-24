@@ -3,29 +3,40 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple UI</title>
+    <title>Training UI Website</title>
     <style>
         body {
+            margin: 0;
+            padding: 0;
             background-color: #cfe1ff;
             font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
+
         .container {
-            margin: 40px;
             display: flex;
             align-items: center;
-            gap: 40px;
+            gap: 60px;
         }
+
         .card {
             background-color: #4c88ff;
-            padding: 30px;
+            padding: 40px;
             border-radius: 20px;
-            width: 250px;
+            width: 260px;
             color: white;
+            text-align: center;
         }
+
         .section-label {
-            margin-bottom: 5px;
+            margin-bottom: 8px;
             font-weight: bold;
+            text-align: left;
         }
+
         .link-button {
             width: 100%;
             padding: 15px;
@@ -38,11 +49,13 @@
             font-size: 16px;
             transition: 0.2s;
         }
+
         .link-button:hover {
-            transform: scale(1.03);
+            transform: scale(1.05);
         }
+
         .character {
-            width: 170px;
+            width: 180px;
         }
     </style>
 </head>
@@ -50,16 +63,16 @@
     <div class="container">
         <div class="card">
             <div class="section-label">Pre-test</div>
-            <button class="link-button" onclick="window.location.href='https://google.com';">Link 1</button>
+            <button class="link-button" onclick="window.location.href='https://example.com';">Go</button>
 
             <div class="section-label">Modul</div>
-            <button class="link-button" onclick="window.location.href='https://google.com';">Link 2</button>
+            <button class="link-button" onclick="window.location.href='https://example.com';">Go</button>
 
             <div class="section-label">Post-test</div>
-            <button class="link-button" onclick="window.location.href='https://google.com';">Link 3</button>
+            <button class="link-button" onclick="window.location.href='https://example.com';">Go</button>
         </div>
 
-        <img src="karakter.jpg" alt="Character" class="character" />
+        <img src="karakter.jpg" class="character" alt="Character" />
     </div>
 </body>
 </html>
