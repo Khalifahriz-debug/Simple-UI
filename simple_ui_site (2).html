@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple UI</title>
+    <style>
+        body {
+            background-color: #cfe1ff;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin: 40px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+        .card {
+            background-color: #4c88ff;
+            padding: 30px;
+            border-radius: 20px;
+            width: 250px;
+            color: white;
+        }
+        .section-label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .link-button {
+            width: 100%;
+            padding: 15px;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.2s;
+        }
+        .link-button:hover {
+            transform: scale(1.03);
+        }
+        .character {
+            width: 170px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="section-label">Pre-test</div>
+            <button class="link-button" onclick="window.location.href='https://google.com';">Link 1</button>
+
+            <div class="section-label">Modul</div>
+            <button class="link-button" onclick="window.location.href='https://google.com';">Link 2</button>
+
+            <div class="section-label">Post-test</div>
+            <button class="link-button" onclick="window.location.href='https://google.com';">Link 3</button>
+        </div>
+
+        <img src="karakter.jpg" alt="Character" class="character" />
+    </div>
+</body>
+</html>
