@@ -9,7 +9,7 @@
             margin: 0;
             padding: 0;
             /* Background gradien biru - ungu */
-            background: linear-gradient(120deg, #5cc6ff 0%, #8f7bff 50%, #d08cff 100%);
+            background: linear-gradient(135deg, #2f6cff 0%, #6fd6ff 100%);
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
@@ -69,12 +69,29 @@
 
         /* Teks motivasi */
         .motivation-text {
-            margin-top: 25px;
+            margin-top: 18px;
             text-align: center;
             font-style: italic;
-            font-size: 15px;
-            color: #f0f0ff;
-            opacity: 0.9;
+            font-size: 14px;
+            color: #eef7ff;
+            opacity: 0.95;
+        }
+
+        .logo-wrapper {
+            margin-top: 22px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo-wrapper img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            background: white;
+            border-radius: 50%;
+            padding: 14px;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
         }
 
         /* Responsive Tablet */
@@ -151,6 +168,11 @@
 
                 <div class="section-label">Budgeting Tracker</div>
                 <button class="link-button" onclick="window.location.href='https://docs.google.com/spreadsheets/d/1UgC0TqDvkn0-zshQpFZAXKrISHEF-hIkwrZI6n1nNvs/edit?usp=sharing';">Go</button>
+
+                <!-- Logo -->
+                <div class="logo-wrapper">
+                    <img src="foto.png" alt="IT'S FINANCE TIME Logo" />
+                </div>
 
                 <!-- Teks motivasi -->
                 <div class="motivation-text">
