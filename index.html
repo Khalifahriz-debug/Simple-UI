@@ -8,7 +8,8 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #cfe1ff;
+            /* Background gradien biru - ungu */
+            background: linear-gradient(120deg, #5cc6ff 0%, #8f7bff 50%, #d08cff 100%);
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
@@ -27,13 +28,15 @@
         }
 
         .card {
-            background-color: #4c88ff;
+            background-color: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(6px);
             padding: 40px;
             border-radius: 20px;
             width: 260px;
             color: white;
             text-align: center;
             flex-shrink: 0;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
 
         .section-label {
@@ -46,7 +49,7 @@
             width: 100%;
             padding: 15px;
             background-color: white;
-            color: black;
+            color: #333;
             border: none;
             border-radius: 15px;
             margin-bottom: 20px;
@@ -62,6 +65,16 @@
         .character {
             width: 300px;
             max-width: 100%;
+        }
+
+        /* Teks motivasi */
+        .motivation-text {
+            margin-top: 25px;
+            text-align: center;
+            font-style: italic;
+            font-size: 15px;
+            color: #f0f0ff;
+            opacity: 0.9;
         }
 
         /* Responsive Tablet */
@@ -96,7 +109,8 @@
                 width: 200px;
             }
         }
-            .money {
+
+        .money {
             position: absolute;
             right: 10px;
             bottom: 10px;
@@ -121,26 +135,31 @@
 </head>
 <body>
     <div class="container-wrapper">
-    <div class="container">
-        <div class="card">
-            <div class="section-label">Pre-test</div>
-            <button class="link-button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSefg-R3NOx6wgwwBBMk4Y7tUj5CcR5_VK4ZxX2-Hy_SYHzMiw/viewform?usp=dialog';">Go</button>
+        <div class="container">
+            <div class="card">
+                <div class="section-label">Pre-test</div>
+                <button class="link-button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSefg-R3NOx6wgwwBBMk4Y7tUj5CcR5_VK4ZxX2-Hy_SYHzMiw/viewform?usp=dialog';">Go</button>
 
-            <div class="section-label">Modul 1</div>
-            <button class="link-button" onclick="window.location.href='https://drive.google.com/file/d/1NTmvQgoJVvggRyYFcmX1_b-VW20Xlw7O/view?usp=sharing';">Go</button>
+                <div class="section-label">Modul 1</div>
+                <button class="link-button" onclick="window.location.href='https://drive.google.com/file/d/1NTmvQgoJVvggRyYFcmX1_b-VW20Xlw7O/view?usp=sharing';">Go</button>
 
-            <div class="section-label">Modul 2</div>
-            <button class="link-button" onclick="window.location.href='https://drive.google.com/file/d/1peAvSme3CKK-HM9bhAdgqTuf2egixiSu/view?usp=sharing';">Go</button>
+                <div class="section-label">Modul 2</div>
+                <button class="link-button" onclick="window.location.href='https://drive.google.com/file/d/1peAvSme3CKK-HM9bhAdgqTuf2egixiSu/view?usp=sharing';">Go</button>
 
-            <div class="section-label">Post-test</div>
-            <button class="link-button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScZqW2T0ZW4GVXCR35eLzeTanVIz1HuaV9R295pdRzOSxGtFQ/viewform?usp=publish-editor';">Go</button>
+                <div class="section-label">Post-test</div>
+                <button class="link-button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScZqW2T0ZW4GVXCR35eLzeTanVIz1HuaV9R295pdRzOSxGtFQ/viewform?usp=publish-editor';">Go</button>
 
-            <div class="section-label">Budgeting Tracker</div>
-            <button class="link-button" onclick="window.location.href='https://docs.google.com/spreadsheets/d/1UgC0TqDvkn0-zshQpFZAXKrISHEF-hIkwrZI6n1nNvs/edit?usp=sharing';">Go</button>
+                <div class="section-label">Budgeting Tracker</div>
+                <button class="link-button" onclick="window.location.href='https://docs.google.com/spreadsheets/d/1UgC0TqDvkn0-zshQpFZAXKrISHEF-hIkwrZI6n1nNvs/edit?usp=sharing';">Go</button>
+
+                <!-- Teks motivasi -->
+                <div class="motivation-text">
+                    "tidak ada kata telat dalam belajar dan investasi"
+                </div>
+            </div>
+
+            <img src="character.png" class="character" alt="Character" />
         </div>
-
-        <img src="character.png" class="character" alt="Character" />
-    </div>
         <img src="money.png" class="money" alt="Money" />
     </div>
 </body>
